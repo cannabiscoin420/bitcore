@@ -30,7 +30,11 @@
     {
       "name": "Gordon Hall",
       "email": "gordon@bitpay.com"
-    }
+    },
+    {
+      "name": "Peter Bushnell",
+      "email": "peter.bushnell@feathercoin.com"
+    },
   ],
   "keywords": [
     "bitcoin",
@@ -43,7 +47,7 @@
   "main": "bitcore.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore.git"
+    "url": "https://github.com/cannabiscoin420/bitcore.git"
   },
   "scripts": {
     "install": "node-gyp rebuild",

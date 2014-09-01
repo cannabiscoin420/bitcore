@@ -11,7 +11,7 @@ var run = function() {
     user: 'user',
     pass: 'pass',
     host: '127.0.0.1',
-    port: '18332',
+    port: '29347',
   };
 
   var rpc = new RpcClient(config);

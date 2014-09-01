@@ -103,7 +103,7 @@
 	// get a peer from dns seed
 	dns.resolve('dnsseed.bluematt.me', function(err, seeds) {
 	  // use the first peer
-	  var peer = new Peer(seeds[0], 8333);
+	  var peer = new Peer(seeds[0], 39348);
 	
 	  //Custom peer:
 	  //var peer = new Peer('180.153.139.246', '8888');
@@ -448,7 +448,7 @@
 	    user: 'user',
 	    pass: 'pass',
 	    host: '127.0.0.1',
-	    port: '18332',
+	    port: '29347',
 	  };
 	  var rpc = new RpcClient(config);
 	  rpc.sendRawTransaction(txHex, function(err, ret) {
@@ -790,7 +790,7 @@
 	    network: 'testnet'
 	  });
 	
-	  peerman.addPeer(new Peer('127.0.0.1', 18333));
+	  peerman.addPeer(new Peer('127.0.0.1', 29348));
 	
 	  peerman.on('connection', function(conn) {
 	    conn.on('inv', handleInv);
@@ -820,7 +820,7 @@
 	    user: 'user',
 	    pass: 'pass',
 	    host: '127.0.0.1',
-	    port: '18332',
+	    port: '29347',
 	  };
 	
 	  var rpc = new RpcClient(config);
@@ -936,7 +936,7 @@
 	  var peerman = new PeerManager({
 	    network: 'testnet'
 	  });
-	  peerman.addPeer(new Peer('127.0.0.1', 18333));
+	  peerman.addPeer(new Peer('127.0.0.1', 29348));
 	
 	  peerman.on('connect', function() {
 	    var conn = peerman.getActiveConnection();
@@ -1018,7 +1018,7 @@
 	var Peer = bitcore.Peer,
 	  Connection = bitcore.Connection;
 	
-	var peer = new Peer('127.0.0.1', 8333);
+	var peer = new Peer('127.0.0.1', 39348);
 	
 	var socket = peer.createConnection();
 	

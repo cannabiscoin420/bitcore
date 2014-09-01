@@ -8,7 +8,7 @@ var run = function() {
   var config = {
     networkName: 'testnet',
     host: 'localhost',
-    port: 18333
+    port: 29348
   };
 
 

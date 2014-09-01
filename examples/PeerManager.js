@@ -30,7 +30,7 @@ var run = function() {
     network: 'testnet'
   });
 
-  peerman.addPeer(new Peer('127.0.0.1', 18333));
+  peerman.addPeer(new Peer('127.0.0.1', 29348));
 
   peerman.on('connection', function(conn) {
     conn.on('inv', handleInv);
